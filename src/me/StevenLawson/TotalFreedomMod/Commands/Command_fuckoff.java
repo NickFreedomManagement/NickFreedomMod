@@ -18,7 +18,7 @@ public class Command_fuckoff extends TFM_Command
         }
 
         boolean fuckoff_enabled = false;
-        double fuckoff_range = 25.0;
+        double fuckoff_range = 25.5;
 
         if (args[0].equalsIgnoreCase("on"))
         {
