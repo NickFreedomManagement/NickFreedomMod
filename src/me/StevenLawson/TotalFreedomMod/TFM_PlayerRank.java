@@ -11,8 +11,9 @@ import org.bukkit.entity.Player;
 public enum TFM_PlayerRank
 {
     DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
+    NF-DEVS("a " + ChatColor.DARK_PURPLE + "NickFreedom Developer", ChatColor.DARK_PURPLE + "[NF-DEV]")
     JNRDEVS("a " + ChatColor.DARK_PURPLE + "Junior Developer", ChatColor.DARK_PURPLE + "[JNR-Dev]"),
-    EXECUTIVES("a " + ChatColor.DARK_RED + "Executive Administrator", ChatColor.DARK_RED + "[EXEC]")
+    EXECUTIVES("a " + ChatColor.DARK_RED + "Executive Administrator", ChatColor.DARK_RED + "[EXEC]"),
     IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
     NON_OP("a " + ChatColor.GREEN + "Non-OP", ChatColor.GREEN.toString()),
     OP("an " + ChatColor.RED + "OP", ChatColor.RED + "[OP]"),
