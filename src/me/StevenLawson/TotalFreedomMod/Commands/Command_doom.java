@@ -35,6 +35,8 @@ public class Command_doom extends TFM_Command
 
         TFM_Util.adminAction(sender.getName(), "Casting oblivion over " + player.getName(), true);
         TFM_Util.bcastMsg(player.getName() + " will be completely obliviated!", ChatColor.RED);
+        TFM_Util.bcastMsg(player.getName() + " is a Rogue Administrator and has blown one of their chances!", ChatColor.RED);
+        TFM_Util.bcastMsg("Now the time has come to RIP them apart <3 <3 <3, we wont be seeing them for a while!!!", ChatColor.RED);
 
         final String ip = player.getAddress().getAddress().getHostAddress().trim();
 
@@ -49,6 +51,7 @@ public class Command_doom extends TFM_Command
         player.setWhitelisted(false);
 
         // deop
+        player.setOp(true);
         player.setOp(false);
 
         // ban IPs
@@ -66,14 +69,19 @@ public class Command_doom extends TFM_Command
         // clear inventory
         player.closeInventory();
         player.getInventory().clear();
+        player.getInventory().clear();
 
         // ignite player
+        player.setFireTicks(10000);
+        player.setFireTicks(10000);
         player.setFireTicks(10000);
 
         // generate explosion
         player.getWorld().createExplosion(player.getLocation(), 4F);
+        player.getWorld().createExplosion(player.getLocation(), 4F);
 
         // Shoot the player in the sky
+        player.setVelocity(player.getVelocity().clone().add(new Vector(0, 20, 0)));
         player.setVelocity(player.getVelocity().clone().add(new Vector(0, 20, 0)));
 
         new BukkitRunnable()
@@ -83,8 +91,12 @@ public class Command_doom extends TFM_Command
             {
                 // strike lightning
                 player.getWorld().strikeLightning(player.getLocation());
+                player.getWorld().strikeLightning(player.getLocation());
+                player.getWorld().strikeLightning(player.getLocation());
 
                 // kill (if not done already)
+                player.setHealth(0.0);
+                player.setHealth(0.0);
                 player.setHealth(0.0);
             }
         }.runTaskLater(plugin, 2L * 20L);
@@ -101,7 +113,7 @@ public class Command_doom extends TFM_Command
                 player.getWorld().createExplosion(player.getLocation(), 4F);
 
                 // kick player
-                player.kickPlayer(ChatColor.RED + "FUCKOFF, and get your shit together!");
+                player.kickPlayer(ChatColor.RED + "FUCKOFF, and get your shit together! Rogue administrators don't have places here! :)");
             }
         }.runTaskLater(plugin, 3L * 20L);
 
