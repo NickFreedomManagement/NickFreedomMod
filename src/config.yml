@@ -23,6 +23,10 @@ server:
   owners:
     - markbyron
     - ItsTeeqo_
+    
+  # All players who show up as co-owner
+  coowners:
+    - Gokuuu
 
   # URL players should appeal for bans at
   ban_url: unknown
