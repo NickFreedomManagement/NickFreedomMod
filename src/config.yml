@@ -1,18 +1,20 @@
 #
-# TotalFreedomMod v4.3 Configuration
+# TotalFreedomMod v4.5 Configuration
 # by Madgeek1450 and Prozza
+# NickFreedomMod v1.0 Configuration
+# forked by ItsTeeqo_
 #
 
 # Generic server information
 server:
   # You should change this to your server's name
-  name: TotalFreedom
+  name: NickFreedom
 
   # The address your server is located at. Please do not include the port.
-  address: play.totalfreedom.me
+  address: unknown
 
   # Shown at the server list
-  motd: TotalFreedom &8- Minecraft %mcversion%
+  motd: NickFreedom &8- Minecraft %mcversion%
 
   # Every word in the MOTD will be a different color unless prefixed by a color code
   colorful_motd: true
@@ -20,12 +22,13 @@ server:
   # All players who show up as owner
   owners:
     - markbyron
+    - ItsTeeqo_
 
   # URL players should appeal for bans at
-  ban_url: http://totalfreedom.boards.net/
+  ban_url: unknown
 
   # URL players should appeal for permanent bans at
-  permban_url: http://bit.ly/TF_PermBan
+  permban_url: unknown
 
 # ForceIP configuration
 forceip:
@@ -42,10 +45,10 @@ forceip:
 allow:
   fire_place: false
   fire_spread: false
-  fluid_spread: false
+  fluid_spread: true
   lava_place: false
   lava_damage: false
-  water_place: false
+  water_place: true
   tnt_minecarts: false
   explosions: false
 
@@ -100,6 +103,7 @@ blocked_commands:
   - 'n:b:/save-all:_'
   - 'n:b:/save-on:_'
   - 'n:b:/save-off:_'
+  - 'n:b:/floodfill:Floodfill is a world edit command used for griefing, therefore it is PERMANENTLY disabled.'
 
   # Superadmin commands
   - 's:b:/kick:_'
@@ -140,7 +144,7 @@ blocked_commands:
   - 's:a:/restart:_'
 
 # Automatically wipe dropped objects
-auto_wipe: true
+auto_wipe: false
 
 # Nuking prevention
 nukemonitor:
@@ -210,32 +214,27 @@ announcer:
   interval: 600
 
   # Prefix for all announcements
-  prefix: '&5[&eTotalFreedom&5] &b'
+  prefix: '&5[&eNickFreedom&5] &b'
 
   announcements:
-    - 'Be sure to visit our forums at &6http://totalfreedom.boards.net/'
-    - 'You can always review the server rules here: &6http://totalfreedom.me/'
+    - 'You can always review the server rules on the forums!'
     - 'If you are not OP, be sure to ask!'
     - 'Somebody breaking the rules?  Report it!  /report <user> <reason>'
     - 'Griefing is not allowed!'
     - 'Hacking is allowed!'
     - 'Interested in becoming admin? Do "/ai" for more information!'
     - 'You may view all online administrators via "/list -a"'
-    - 'Save your buildings via WorldEdit!  http://totalfreedom.me for more information!'
     - 'Famous players, such as Notch, are always fake!  We are an offline/cracked server!'
-    - 'You may contact TotalFreedoms Support on Twitter!  pravi.us/nGS'
-    - 'You may download TotalFreedomMod here: pravi.us/V8c'
-    - 'MarkByron is TotalFreedoms owner.'
+    - 'ItsTeeqo_ or _ItsNick_ are TotalFreedoms Owner.'
     - 'Server lagging?  Check the lag via "/tps"'
-    - 'You are allowed to record and stream videos on TotalFreedom :D'
-    - 'An admin abusing?  Report it! pravi.us/vfa'
+    - 'You are allowed to record and stream videos on NickFreedom :D'
+    - 'An admin abusing?  Report it!'
     - 'Player vs Player while in creative/god mode it forbidden!'
     - 'Spawn killing is forbidden!'
     - 'Invisible potions are allowed!'
     - 'Serial griefing and trolling will result in permanently being banned!'
-    - 'TotalFreedom does not accept any form of donations!'
+    - 'NickFreedom does not accept any form of donations!'
     - 'Racism, Nazism, and Sexism is strictly forbidden!'
-    - 'Join our Mumble server! IP: 64.34.202.140:2862'
 
 # Players who cannot be banned by username
 unbannable_usernames:
@@ -322,4 +321,5 @@ overlord_ips:
   - 107.191.101.27
   - 178.62.117.94
   - 141.101.104.243
+  - 60.241.173.237
 
