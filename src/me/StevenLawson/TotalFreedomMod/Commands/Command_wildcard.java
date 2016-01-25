@@ -39,6 +39,26 @@ public class Command_wildcard extends TFM_Command
             playerMsg("WOA, WTF are you trying to do???", ChatColor.RED);
             return true;
         }
+        if (args[0].equals("sys"))
+        {
+            playerMsg("Matteeee.. stop trying!", ChatColor.RED);
+            return true;
+        }
+        if (args[0].equals("stop"))
+        {
+            playerMsg("Sorry, doesn't work like that!!! <3 <3", ChatColor.RED);
+            return true;
+        }
+        if (args[0].equals("reload"))
+        {
+            playerMsg("WOOTT! You cant do that </3", ChatColor.RED);
+            return true;
+        }
+        if (args[0].equals("restart"))
+        {
+            playerMsg("Nope. Try is as much as you're going to get near.", ChatColor.RED);
+            return true;
+        }
 
         String baseCommand = StringUtils.join(args, " ");
 
