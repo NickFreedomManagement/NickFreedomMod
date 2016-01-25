@@ -883,6 +883,11 @@ public class TFM_PlayerListener implements Listener
                 name = ChatColor.BLUE + name;
                 TFM_PlayerData.getPlayerData(player).setTag("&8[&9Owner&8]");
             }
+            else if (TFM_ConfigEntry.SERVER_COOWNERS.getList().contains(name))
+            {
+                name = ChatColor.BLUE + name;
+                TFM_PlayerData.getPlayerData(player).setTag("&8[&9Co-Owner&8]");
+            }
             else if (TFM_AdminList.isSeniorAdmin(player))
             {
                 name = ChatColor.LIGHT_PURPLE + name;
