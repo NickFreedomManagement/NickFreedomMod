@@ -869,6 +869,13 @@ public class TFM_PlayerListener implements Listener
             afterNameSet(player);
             return;
         }
+        else if (TFM_Util.EXECUTIVES.contains(player.getName()))
+        {
+            player.setPlayerListName(ChatColor.DARK_RED + name);
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&4Executive Admin&8]");
+            afterNameSet(player);
+            return;
+        }
         else if (TFM_AdminList.isSuperAdmin(player))
         {
             if (TFM_ConfigEntry.SERVER_OWNERS.getList().contains(name))
