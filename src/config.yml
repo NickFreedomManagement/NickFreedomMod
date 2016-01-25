@@ -27,6 +27,7 @@ server:
   # All players who show up as co-owner
   coowners:
     - Gokuuu
+    - xWolfie_
 
   # URL players should appeal for bans at
   ban_url: unknown
