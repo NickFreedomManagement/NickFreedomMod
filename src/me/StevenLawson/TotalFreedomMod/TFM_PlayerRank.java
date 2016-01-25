@@ -78,6 +78,11 @@ public enum TFM_PlayerRank
         {
             return JNRDEVS;
         }
+        
+        if (EXECUTIVES.contains(sender.getName()))
+        {
+            return EXECUTIVES;
+        }
 
         final TFM_Admin entry = TFM_AdminList.getEntryByIp(TFM_Util.getIp((Player) sender));
 
