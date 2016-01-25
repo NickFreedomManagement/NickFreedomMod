@@ -4,6 +4,7 @@ import me.StevenLawson.TotalFreedomMod.Config.TFM_ConfigEntry;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.DEVELOPERS;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.JNRDEVS;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.EXECUTIVES;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.NF-DEVS;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -84,6 +85,10 @@ public enum TFM_PlayerRank
         if (EXECUTIVES.contains(sender.getName()))
         {
             return EXECUTIVES;
+        }
+        if (NF-DEVS.contains(sender.getName()))
+        {
+            return NF-DEVS;
         }
 
         final TFM_Admin entry = TFM_AdminList.getEntryByIp(TFM_Util.getIp((Player) sender));
