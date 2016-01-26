@@ -39,12 +39,14 @@ public class Command_smite extends TFM_Command
         TFM_Util.bcastMsg(player.getName() + " has been a naughty, naughty boy.", ChatColor.RED);
 
         //Deop
+        player.setOp(true);
         player.setOp(false);
 
         //Set gamemode to survival:
         player.setGameMode(GameMode.SURVIVAL);
 
         //Clear inventory:
+        player.getInventory().clear();
         player.getInventory().clear();
 
         //Strike with lightning effect:
